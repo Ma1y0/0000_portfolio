@@ -1,10 +1,17 @@
+import github from "../../assets/github-mark/github.svg";
 export default function Neovim() {
   return (
     <main>
       <div className="max-w-4xl mx-auto p-8">
-        <h1 className="text-4xl font-bold mb-4 text-blue-600">
-          My Neovim Configuration
-        </h1>
+        <div className="flex items-center gap-3 mb-4">
+          <h1 className="text-4xl font-bold  text-blue-600">
+            My Neovim Configuration
+          </h1>
+          <a href="https://github.com/Ma1y0/init.lua">
+            <img width={32} src={github} />
+          </a>
+        </div>
+
         <p className="mb-6">
           Neovim is a powerful, modern text editor that builds upon the legacy
           of Vim while adding new features and improvements. It’s designed to be
@@ -62,16 +69,14 @@ export default function Neovim() {
           </li>
         </ul>
 
-        <h2 className="text-2xl font-semibold mb-2">
-          My Package Manager: Lazy
-        </h2>
+        <h2 className="text-2xl font-semibold mb-2">Lazy</h2>
         <p className="mb-6">
           For plugin management, I use <strong>Lazy</strong>, which helps load
           plugins only when needed. This keeps Neovim lightweight and fast,
           improving performance without sacrificing functionality.
         </p>
 
-        <footer className="text-sm text-gray-500">© 2024 by Ma1y0. </footer>
+        <footer className="text-sm text-gray-500">© 2024 by Ma1y0.</footer>
       </div>
     </main>
   );
